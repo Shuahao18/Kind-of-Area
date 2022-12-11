@@ -83,18 +83,18 @@ void banner(void)
     {
     case 'Y':
     case 'y' :
-        system("cls");
+        system("clear");
         mainMenu();
         break;
 
     case 'N':
     case 'n':
-        system("cls");
+        system("clear");
         greet();
         break;
 
     default:
-        system("cls");
+        system("clear");
         invalid();
         break;
     }
@@ -543,7 +543,7 @@ void simpleCal(void)
         break;
 
     default:
-        system("cls");
+        system("clear");
         invalid();
         break;
     }
