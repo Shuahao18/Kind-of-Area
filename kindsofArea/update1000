@@ -48,6 +48,13 @@ void intId(void);
 void posNeg(void);
 void intCom(void);
 
+//This is For Increment and Decrement
+void incrDecre(void);
+void preIncre(void);
+void postIncre(void);
+void preDecre(void);
+int opt, x, y;
+
 // This is For the last frame in our program either GREET or if it INVALID
 void greet(void);
 void invalid(void);
@@ -163,8 +170,8 @@ void mainMenu(void)
 
     case 7:
         system("clear");
-        printf("UNDER PROCESS! \n");
-        // gradeRange();
+        incrDecre();
+
         break;
 
     case 8:
@@ -1645,6 +1652,86 @@ void intCom(void)
         break;
     }
 }
+void incrDecre(void){
+    printf("\n\t~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+    printf("\t||\t  Increment & Decrement       ||\n");
+    printf("\t||====================================||\n");
+    printf("\t||\t   Pre-Increment   [1]        ||\n");
+    printf("\t||\t   Post-Increment  [2]        ||\n");
+    printf("\t||\t   Pre-Decrement   [3]        ||\n");
+    printf("\t||\t   Post-Decrement  [4]        ||\n");
+    printf("\t||====================================||\n\n");
+
+    printf("\tEnter a number:  ");
+    scanf("%i",&opt);
+
+    switch(opt){
+        case 1:
+        system("cls");
+        preIncre();
+        break;
+
+        case 2:
+        system("cls");
+        postIncre();
+        break;
+
+        case 3:
+        system("cls");
+        preDecre();
+        break;
+
+        case 4:
+        system("cls");
+        postDecre();
+        break;
+
+        default :
+        system("cls");
+        printf("INVALID");
+    }
+}
+void preIncre(void){
+      printf("\t\tPre-Increment\n\n");
+      printf("\t\tEnter a number : ");
+      scanf("%i", &x);
+
+      ++x;
+      system("cls");
+      printf("\t\tThe updated value of X: %i ", x);
+
+
+}
+void postIncre(void){
+      printf("\t\tEnter a number : ");
+      scanf("%i", &x);
+      y = x++;
+      system("cls");
+      printf("\t\tPost-Increment\n\n");
+      printf("\t\tThe original value of X : %i \n ", y);
+      printf("\t\tThe updated value of Y : %i \n", x);
+
+}
+void preDecre(void){
+      printf("\t\tEnter a number : ");
+      scanf("%i", &x);
+      --x;
+      system("cls");
+      printf("\t\tPre-Decrement\n\n");
+      printf("\t\tThe updated value of Y : %i \n", x);
+
+}
+void postDecre(void){
+      printf("\t\tEnter a number : ");
+      scanf("%i", &x);
+      y =x--;
+      system("cls");
+      printf("\t\tPost-Decrement\n\n");
+      printf("\t\tThe updated value of Y : %i \n", x);
+}
+
+
+
 
 void greet(void)
 {
