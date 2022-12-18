@@ -1687,7 +1687,7 @@ void incrDecre(void)
     printf("\t\t Enter a number: ");
     scanf("%i",&opt);
 
-    switch(opt)
+    switch (opt)
     {
         case 1:
             system("cls");
@@ -1797,11 +1797,12 @@ void preDecre(void)
     printf("\t\t ==============================+==============================\n\n");
     printf("\t\t         BACK press [0]               EXIT press [1] : ");
     scanf("%i", &opt);
+
     switch (opt)
     {
     case 0:
         system("cls");
-        intId();
+        incrDecre();
         break;
 
     case 1:
@@ -1815,6 +1816,7 @@ void preDecre(void)
         break;
     }
 }
+
 void postDecre(void)
 {
     printf("\n\n\n\t\t ==============================+==============================\n");
