@@ -1793,7 +1793,7 @@ void preDecre(void)
 
     --x;
 
-    printf("\n\n\t\t                  The updated value of Y : %i \n\n", x);
+    printf("\n\n\t\t                  The updated value of X : %i \n\n", x);
     printf("\t\t ==============================+==============================\n\n");
     printf("\t\t         BACK press [0]               EXIT press [1] : ");
     scanf("%i", &opt);
