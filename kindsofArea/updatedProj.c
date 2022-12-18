@@ -1709,6 +1709,11 @@ void incrDecre(void)
             postDecre();
             break;
 
+        case 5:
+        system("cls");
+        mainMenu();
+        break;
+
         default :
             system("cls");
             invalid();
@@ -1730,6 +1735,7 @@ void preIncre(void)
     printf("\t\t ==============================+==============================\n\n");
     printf("\t\t         BACK press [0]               EXIT press [1] : ");
     scanf("%i", &opt);
+
     switch (opt)
     {
     case 0:
@@ -1764,6 +1770,7 @@ void postIncre(void)
     printf("\t\t ==============================+==============================\n\n");
     printf("\t\t         BACK press [0]               EXIT press [1] : ");
     scanf("%i", &opt);
+
     switch (opt)
     {
     case 0:
@@ -1832,6 +1839,7 @@ void postDecre(void)
     printf("\t\t ==============================+==============================\n\n");
      printf("\t\t         BACK press [0]               EXIT press [1] : ");
     scanf("%i", &opt);
+
     switch (opt)
     {
     case 0:
