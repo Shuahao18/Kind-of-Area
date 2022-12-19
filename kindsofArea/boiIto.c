@@ -57,6 +57,7 @@ void preDecre(void);
 void postDecre(void);
 void forLoop(void);
 void loopIncre(void);
+void loopDecre(void);
 void forLoopTri(void);
 
 
@@ -1909,12 +1910,12 @@ void forLoop(void)
 
         case 2:
             system("cls");
-            forLoopTri();
+            loopDecre();
             break;
 
         case 3:
             system("cls");
-            //function
+            forLoopTri();
             break;
 
         case 4:
@@ -1946,6 +1947,42 @@ void loopIncre(void)
     for(x = i; x <= n; x++)
     {
         printf("%i\n", x);
+    }
+
+    printf("\t\t ==============================+==============================\n\n");
+    printf("\t\t         BACK press [0]               EXIT press [1] : ");
+    scanf("%i", &opt);
+    switch (opt)
+    {
+    case 0:
+        system("cls");
+        forLoop();
+        break;
+
+    case 1:
+        system("cls");
+        greet();
+        break;
+
+    default:
+        system("cls");
+        invalid();
+        break;
+    }
+}
+
+//Final seatwork for loop Decrement Joshua Meredores
+void loopDecre(void)
+{
+    printf("Enter The Initial value : ");
+    scanf("%i", &i);
+
+    printf("Enter The Ending value : ");
+    scanf("%i", &j);
+
+for(i; i>=j; i--)
+    {
+    printf("%i\n",i);
     }
 
     printf("\t\t ==============================+==============================\n\n");
