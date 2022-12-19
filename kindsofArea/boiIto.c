@@ -1971,7 +1971,7 @@ void loopIncre(void)
     }
 }
 
-//Final seatwork for loop Decrement Joshua Meredores
+//Final seatwork for loop Decrement Joshua U. Meredores
 void loopDecre(void)
 {
     printf("Enter The Initial value : ");
